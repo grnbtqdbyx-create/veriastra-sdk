@@ -1,7 +1,7 @@
 {
   "name": "veriastra",
-  "version": "0.1.0",
-  "description": "Typed, zero-dependency client for the Veriastra data-validation API: email, phone, IP, domain, sanctions and company lookups with signed result receipts.",
+  "version": "0.2.0",
+  "description": "Typed, zero-dependency client for the Veriastra data-validation API. Methods match the live OpenAPI 3.1 document (40 paths).",
   "keywords": ["email-verification", "phone-validation", "ip-intelligence", "sanctions-screening", "fraud-detection", "kyc", "data-validation"],
   "homepage": "https://veriastra.com/docs",
   "repository": { "type": "git", "url": "git+https://github.com/grnbtqdbyx-create/veriastra-sdk.git" },
@@ -16,6 +16,7 @@
   "engines": { "node": ">=18" },
   "scripts": {
     "build": "tsc",
+    "test": "npm run build && node --test test/*.test.js",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
